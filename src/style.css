@@ -94,16 +94,19 @@ ul {
   color: #413e3e;
 }
 .ikonka {
-  width: 2.5rem;
+  width: 1rem;
   position: relative;
   left: auto;
-  top: 5px;
+  padding-bottom: 2px;
 }
-/*.ucetAregistrace {
+.ikonkaCam {
+  width: 2.5rem;
+  margin-top: 10px;
+}
+.ucetAregistrace {
   background-color: #ee9b00;
   border: none;
   color: white;
-  padding: 4px 8px;
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
@@ -113,7 +116,7 @@ ul {
   font-weight: bolder;
   border-radius: 1.5rem;
   display: inline-flex;
-}*/
+}
 
 li img {
   position: relative;
@@ -121,24 +124,32 @@ li img {
   top: 2px;
 }
 
-/* in Main already
 .uvodStranaSPozadim {
   padding: 250px 80px;
-  background-image: url('obrazky/kamera\ na\ zdi.jpg');
+  background-image: url('pages/Main/img/kameraNaZdi.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
   max-width: 80%;
   margin: auto;
+  height: 800px;
 }
 .uvodSlogan {
   font-family: 'Oswald';
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
+  line-height: 5rem;
   /*text-shadow: 3px 3px 7px #666666;*/
-/*} */
+}
+.vlozenyDiv {
+  width: 30rem;
+  height: 15rem;
+  background-color: #d0b8ac;
+  margin: auto;
+  margin-top: -100px;
+}
 .kontejner {
   max-width: 45rem;
   margin: auto;
@@ -146,15 +157,14 @@ li img {
 p {
   font-family: sans-serif;
 }
-/* in Main already
 .uvodText {
   font-family: 'Oswald';
   font-size: 1rem;
   color: #141414;
   /*background-color: rgb(206, 179, 110);*/
-/* text-align: center;
+  text-align: center;
   font-weight: bold;
-} */
+}
 .buttons {
   display: flex;
   flex-direction: column;
@@ -178,22 +188,40 @@ p {
   border-radius: 1.5rem;
 }
 h1,
-h2,
-h3 {
+h2 {
   text-align: center;
 }
-h1 {
+h2 {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+.tlacitko {
   background-color: #ee9b00;
   border-radius: 1.5rem;
+  text-align: center;
 }
-/*stylovani stranky domu*/
 
+/*stylovani stranky domu*/
+h3 {
+  text-align: center;
+  font-size: 48px;
+}
+.domu {
+  width: 720px;
+  margin-top: 30px;
+}
 /*stylovani galerie v ceniku*/
 .obrazkyDiv {
   display: flex;
   flex-direction: column;
   background-color: #d0b8ac;
   border-radius: 10px;
+}
+.obrazekKontejner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 24px;
 }
 .miniaturyDiv {
   display: flex;
@@ -203,11 +231,33 @@ h1 {
 .miniatury {
   text-align: center;
   margin: auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.obrazekPes {
+  width: 100px;
+  border-width: 2.5px;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-radius: 5px;
+}
+.obrazekAuto {
+  width: 160px;
+  border-width: 2.5px;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-radius: 5px;
 }
 
-.obrazekPes {
+.obrazekPesOriginal {
+  border-width: 2.5px;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-radius: 5px;
+  width: 80%;
+  padding: 0px, opx;
+}
+.obrazekAutoOriginal {
   border-width: 2.5px;
   border-style: solid;
   border-color: whitesmoke;
@@ -215,7 +265,10 @@ h1 {
   width: 90%;
   padding: 0px, opx;
 }
-
+.obrazekPopis {
+  font-size: 1rem;
+  font-weight: normal;
+}
 /*konec*/
 .galerie {
   display: flex;
@@ -312,6 +365,10 @@ td {
 .pocet {
   text-align: right;
   font-size: 1rem;
+}
+.ucetFiltr {
+  font-size: 1rem;
+  text-align: start;
 }
 /*footer*/
 .paticka {

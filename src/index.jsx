@@ -9,6 +9,7 @@ import { Prices } from './pages/Prices';
 import { Registration } from './pages/Registration';
 import './style.css';
 import { Details } from './pages/Details';
+import { Gallery } from './pages/Gallery';
 
 const App = () => (
   <>
@@ -29,6 +30,9 @@ const App = () => (
         </Route>
         <Route path="/details">
           <Details />
+        </Route>
+        <Route path="/gallery">
+          <Gallery />
         </Route>
       </Switch>
     </Router>

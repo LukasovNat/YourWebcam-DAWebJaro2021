@@ -42,13 +42,13 @@ export const Header = () => {
           </li>
 
           <li className="ucetAregistrace">
-            <a href="mujUcet.html">
+            <Link className="byloA" to="/gallery">
               <img
                 className="ucetAregistrace"
                 src="../../assets/iconmonstr-user-5.svg"
               />
               <span className="ucetAregistrace--span">Můj účet</span>
-            </a>
+            </Link>
           </li>
           <li className="ucetAregistrace">
             <Link className="byloA" to="/registration">
