@@ -22,22 +22,22 @@ export const Header = () => {
         <ul className="menu">
           <li>
             <Link className="byloA" to="/">
-              Úvod
+              ÚVOD
             </Link>
           </li>
           <li>
             <Link className="byloA" to="/details">
-              Blizsi info
+              CO DĚLÁME
             </Link>
           </li>
           <li>
             <Link className="byloA" to="/cameras">
-              Podporované web kamery
+              PODPOROVANÉ KAMERY
             </Link>
           </li>
           <li>
             <Link className="byloA" to="/price-list">
-              Ceník
+              CENÍK
             </Link>
           </li>
         </ul>

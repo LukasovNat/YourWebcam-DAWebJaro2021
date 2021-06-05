@@ -27,10 +27,10 @@ export const Details = () => (
         <img className="domu" src="../../assets/backgroundKamera.jpg" />
         {/* <!--Popis1--> */}
         <div className="popisSluzby2">
-          <h3>S námi je vše jednoduché</h3>
+          <h3>S námi je vše jednoduché...</h3>
           <p>
-            Zkontrolujte si, zda je Vaše kamera kompatibilní s naší službou nebo
-            se rovnou zaregistrujte.
+            Zkontrolujte si, zda je Vaše kamera kompatibilní s naší službou,
+            nebo se rovnou zaregistrujte.
           </p>
 
           <div className="buttons">
