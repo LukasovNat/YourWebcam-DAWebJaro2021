@@ -1,0 +1,22 @@
+/* .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttonHlavni,
+.vytvorit_ucet {
+  background-color: #197278; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder;
+  border-radius: 1.5rem;
+} */

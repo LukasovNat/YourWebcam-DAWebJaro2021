@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
-}
-
-html {
-  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -44,4 +42,351 @@ body {
   );
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#d0b8ac", endColorstr="#f3d8c7", GradientType=1 );
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+h1 {
+  background-color: #ee9b00;
+  border-radius: 1.5rem;
+}
+
+/* .............. */
+/* all copy paste */
+/* .............. */
+
+/* moved to Header already
+.hlavicka {
+  background-color: #d0b8ac;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+} */
+
+.byloA {
+  display: block;
+  color: #413e3e;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 1.2rem;
+}
+.byloA:hover {
+  background-color: darkgray;
+  color: white;
+  margin: 0;
+}
+.menu {
+  display: flex;
+  margin-right: 15px;
+}
+ul {
+  list-style: none;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 10px;
+  color: #413e3e;
+}
+.ikonka {
+  width: 2.5rem;
+  position: relative;
+  left: auto;
+  top: 5px;
+}
+/*.ucetAregistrace {
+  background-color: #ee9b00;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder;
+  border-radius: 1.5rem;
+  display: inline-flex;
+}*/
+
+li img {
+  position: relative;
+  right: 5px;
+  top: 2px;
+}
+
+/* in Main already
+.uvodStranaSPozadim {
+  padding: 250px 80px;
+  background-image: url('obrazky/kamera\ na\ zdi.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  max-width: 80%;
+  margin: auto;
+}
+.uvodSlogan {
+  font-family: 'Oswald';
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  /*text-shadow: 3px 3px 7px #666666;*/
+/*} */
+.kontejner {
+  max-width: 45rem;
+  margin: auto;
+}
+p {
+  font-family: sans-serif;
+}
+/* in Main already
+.uvodText {
+  font-family: 'Oswald';
+  font-size: 1rem;
+  color: #141414;
+  /*background-color: rgb(206, 179, 110);*/
+/* text-align: center;
+  font-weight: bold;
+} */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttonHlavni,
+.vytvorit_ucet {
+  background-color: #197278; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder;
+  border-radius: 1.5rem;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+h1 {
+  background-color: #ee9b00;
+  border-radius: 1.5rem;
+}
+/*stylovani stranky domu*/
+
+/*stylovani galerie v ceniku*/
+.obrazkyDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: #d0b8ac;
+  border-radius: 10px;
+}
+.miniaturyDiv {
+  display: flex;
+  overflow-x: auto;
+}
+.aktualniSnimek,
+.miniatury {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.obrazekPes {
+  border-width: 2.5px;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-radius: 5px;
+  width: 90%;
+  padding: 0px, opx;
+}
+
+/*konec*/
+.galerie {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+/*stylovani registracniho formulare*/
+.obrazRegistrace {
+  display: flex;
+  font-family: sans-serif;
+}
+.imgRegistrace {
+  max-width: 50%;
+  border-radius: 10px;
+}
+fieldset {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 12px;
+  padding: 0 10px;
+}
+.formularovePole {
+  background-color: #acb09f;
+  border: 1px solid #eaeaea;
+  list-style: none;
+  padding: 12px;
+}
+
+li {
+  margin: 0.5em 0;
+}
+ul label {
+  font-size: large;
+  font-weight: bolder;
+}
+input {
+  width: 100%;
+  min-height: 1.5rem;
+  font-size: 1rem;
+}
+.buttonVyber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vytvorit_ucet {
+  background-color: #ee9b00;
+  font-family: 'Oswald';
+  color: #141414;
+} /*konec*/
+/*stylovani muj ucet*/
+
+.prihlaseniMujUcet {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  font-size: 1rem;
+}
+.ucetUvod {
+  font-weight: normal;
+  text-align: left;
+  font-size: medium;
+}
+.container {
+  max-width: 45rem;
+  margin: auto;
+  background: #d0b8ac;
+  overflow: auto;
+}
+.gallery {
+  margin: 5px;
+  border: 1px solid whitesmoke;
+  width: 160px;
+  float: left;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 1rem;
+}
+table {
+  border-spacing: 0;
+}
+th,
+td {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+.pocet {
+  text-align: right;
+  font-size: 1rem;
+}
+/*footer*/
+.paticka {
+  color: #413e3e;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 0.7rem;
+}
+@media (max-width: 575px) {
+  .uvodStranaSPozadim {
+    padding: 20px 40px;
+    background-image: url('pages/Main/img/kameraNaZdi.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+
+    opacity: 80%;
+    margin: auto;
+  }
+}
+@media (max-width: 575px) {
+  .kontejner {
+    width: 100%;
+  }
+}
+
+/*@media (max-width: 576px) {
+  .menu {
+    width: 50%;
+    font-size: 10px;
+  }
+}*/
+@media (max-width: 800px) {
+  .menu {
+    width: 60%;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 575px) {
+  .hamburgerMenu {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .menu,
+  li button {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .imgRegistrace {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .textKObrazkum {
+    font-size: 00.7rem;
+    font-weight: bolder;
+  }
+}
+@media (max-width: 575px) {
+  .miniatury {
+    width: 85%;
+  }
+}
+@media (max-width: 575px) {
+  .obrazekPes {
+    width: 80%;
+  }
+}
+@media (max-width: 575px) {
+  p {
+    font-size: 0.7rem;
+    text-align: justify;
+  }
 }

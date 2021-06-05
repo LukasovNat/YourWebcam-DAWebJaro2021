@@ -8,6 +8,7 @@ import { Main } from './pages/Main';
 import { Prices } from './pages/Prices';
 import { Registration } from './pages/Registration';
 import './style.css';
+import { Details } from './pages/Details';
 
 const App = () => (
   <>
@@ -25,6 +26,9 @@ const App = () => (
         </Route>
         <Route path="/cameras">
           <Cameras />
+        </Route>
+        <Route path="/details">
+          <Details />
         </Route>
       </Switch>
     </Router>

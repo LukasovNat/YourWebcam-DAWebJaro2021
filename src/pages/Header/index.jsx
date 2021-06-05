@@ -21,14 +21,24 @@ export const Header = () => {
         </div>
         <ul className="menu">
           <li>
-            <Link to="/">Úvod</Link>
-          </li>
-          {/* <li><a href="uvod.html">Domů</a></li> */}
-          <li>
-            <Link to="/cameras">Podporované web kamery</Link>
+            <Link className="byloA" to="/">
+              Úvod
+            </Link>
           </li>
           <li>
-            <Link to="/price-list">Ceník</Link>
+            <Link className="byloA" to="/details">
+              Blizsi info
+            </Link>
+          </li>
+          <li>
+            <Link className="byloA" to="/cameras">
+              Podporované web kamery
+            </Link>
+          </li>
+          <li>
+            <Link className="byloA" to="/price-list">
+              Ceník
+            </Link>
           </li>
 
           <li className="ucetAregistrace">
@@ -41,7 +51,7 @@ export const Header = () => {
             </a>
           </li>
           <li className="ucetAregistrace">
-            <Link to="/registration">
+            <Link className="byloA" to="/registration">
               <img
                 className="ucetAregistrace"
                 src="../../assets/iconmonstr-edit-5.svg"

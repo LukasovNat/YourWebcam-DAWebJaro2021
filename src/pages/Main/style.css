@@ -1,0 +1,29 @@
+.uvodStranaSPozadim {
+  padding: 250px 80px;
+  background-image: url('img/kameraNaZdi.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  max-width: 80%;
+  margin: auto;
+}
+.uvodSlogan {
+  font-family: 'Oswald';
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  /*text-shadow: 3px 3px 7px #666666;*/
+}
+.uvodSlogan--span {
+  color: whitesmoke;
+}
+
+.uvodText {
+  font-family: 'Oswald';
+  font-size: 1rem;
+  color: #141414;
+  /*background-color: rgb(206, 179, 110);*/
+  text-align: center;
+  font-weight: bold;
+}
