@@ -7,3 +7,41 @@
 html {
   font-family: 'Open Sans', sans-serif;
 }
+
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.5;
+  text-align: start;
+  background-attachment: fixed;
+  background: hsla(20, 28%, 75%, 1);
+
+  background: linear-gradient(
+    360deg,
+    hsla(20, 28%, 75%, 1) 0%,
+    hsla(23, 65%, 87%, 1) 25%,
+    hsla(28, 37%, 90%, 1) 50%,
+    hsla(120, 60%, 99%, 1) 75%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    360deg,
+    hsla(20, 28%, 75%, 1) 0%,
+    hsla(23, 65%, 87%, 1) 25%,
+    hsla(28, 37%, 90%, 1) 50%,
+    hsla(120, 60%, 99%, 1) 75%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    360deg,
+    hsla(20, 28%, 75%, 1) 0%,
+    hsla(23, 65%, 87%, 1) 25%,
+    hsla(28, 37%, 90%, 1) 50%,
+    hsla(120, 60%, 99%, 1) 75%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#d0b8ac", endColorstr="#f3d8c7", GradientType=1 );
+}

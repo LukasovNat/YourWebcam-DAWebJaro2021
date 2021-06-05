@@ -1,5 +1,9 @@
 import React from 'react';
 
 export const Footer = () => {
-  return <div>footer here</div>;
+  return (
+    <footer class="paticka">
+      <p>&copy; N&K&J DA WEB 2021</p>
+    </footer>
+  );
 };

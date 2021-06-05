@@ -1,0 +1,48 @@
+.hlavicka {
+  background-color: #d0b8ac;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+li {
+  display: block;
+  color: #413e3e;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 1.2rem;
+}
+li:hover {
+  background-color: darkgray;
+  color: white;
+  margin: 0;
+}
+.menu {
+  display: flex;
+  margin-right: 15px;
+}
+ul {
+  list-style: none;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 10px;
+  color: #413e3e;
+}
+.ikonka {
+  width: 2.5rem;
+  position: relative;
+  left: auto;
+  top: 5px;
+}
+.ucetAregistrace--span {
+  color: #197278;
+}
+.hamburgerMenu--span {
+  font-size: 1.5rem;
+  font-family: Oswald;
+  color: #413e3e;
+}
