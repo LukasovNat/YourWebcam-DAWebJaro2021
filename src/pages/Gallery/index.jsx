@@ -1,7 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+const testPicDb = [
+  { id: '1', url: '../../assets/MartinAuto.jpg', label: 'Prvni' },
+  { id: '2', url: '../../assets/pesZmenseno.jpg', label: 'Druhy' },
+  { id: '3', url: '../../assets/MartinAuto.jpg', label: 'Treti' },
+  { id: '4', url: '../../assets/pesZmenseno.jpg', label: 'Ctvrty' },
+  { id: '5', url: '../../assets/MartinAuto.jpg', label: 'Paty' },
+];
+
+const Obrazek = ({ url, label, handleClick }) => {
+  return (
+    <div onClick={() => handleClick(url, label)} className="obrazekKontejner">
+      <img className="obrazekAuto" src={url} />
+      <span className="obrazekPopis">{label}</span>
+    </div>
+  );
+};
 
 export const Gallery = () => {
-  const imgUrl = '../../assets//MartinAuto.jpg';
+  const img = testPicDb[0] || {
+    id: 'default',
+    url: '../../assets/MartinAuto.jpg',
+    label: 'Default pic',
+  };
+
+  const [currentPic, setCurrentPic] = useState(img);
+
+  const changePic = (url, label) => {
+    setCurrentPic({ url: url, label: label });
+  };
 
   return (
     <>
@@ -35,49 +62,25 @@ export const Gallery = () => {
               <tbody>
                 <tr>
                   <td>
-                    <img className="obrazekAutoOriginal" src={imgUrl} />
+                    <img className="obrazekAutoOriginal" src={currentPic.url} />
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <span className="obrazekPopis">Popisek</span>
+                    <span className="obrazekPopis">{currentPic.label}</span>
                   </td>
                 </tr>
               </tbody>
             </table>
             <div className="miniaturyDiv">
-              <div className="obrazekKontejner">
-                <img className="obrazekAuto" src={imgUrl} />
-                <span className="obrazekPopis">Popisek</span>
-              </div>
-              <div className="obrazekKontejner">
-                <img className="obrazekAuto" src={imgUrl} />
-                <span className="obrazekPopis">Popisek</span>
-              </div>
-              <div className="obrazekKontejner">
-                <img className="obrazekAuto" src={imgUrl} />
-                <span className="obrazekPopis">Popisek</span>
-              </div>
-              <div className="obrazekKontejner">
-                <img className="obrazekAuto" src={imgUrl} />
-                <span className="obrazekPopis">Popisek</span>
-              </div>
-              <div className="obrazekKontejner">
-                <img className="obrazekAuto" src={imgUrl} />
-                <span className="obrazekPopis">Popisek</span>
-              </div>
-              <div className="obrazekKontejner">
-                <img className="obrazekAuto" src={imgUrl} />
-                <span className="obrazekPopis">Popisek</span>
-              </div>
-              <div className="obrazekKontejner">
-                <img className="obrazekAuto" src={imgUrl} />
-                <span className="obrazekPopis">Popisek</span>
-              </div>
-              <div className="obrazekKontejner">
-                <img className="obrazekAuto" src={imgUrl} />
-                <span className="obrazekPopis">Popisek</span>
-              </div>
+              {testPicDb.map((pic) => (
+                <Obrazek
+                  url={pic.url}
+                  label={pic.label}
+                  handleClick={changePic}
+                  key={pic.id}
+                />
+              ))}
             </div>
           </div>
           {/* <!--<div className="gallery">
