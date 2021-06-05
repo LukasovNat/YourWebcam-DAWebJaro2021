@@ -7,7 +7,7 @@ export const Details = () => (
     <main role="main" className="kontejner">
       <div className="popisSluzby">
         <div className="popisSluzby1">
-          <h3>"Sledujte vše, co je pro Vás důležité"</h3>
+          <h2>"Sledujte vše, co je pro Vás důležité"</h2>
 
           <p>
             Chcete mít přehled, co se děje ve vašem domě, na parkovišti, na
@@ -24,7 +24,7 @@ export const Details = () => (
             <br />
           </p>
         </div>
-
+        <img className="domu" src="../../assets/backgroundKamera.jpg" />
         {/* <!--Popis1--> */}
         <div className="popisSluzby2">
           <h3>S námi je vše jednoduché</h3>
@@ -54,11 +54,11 @@ export const Details = () => (
           </p>
         </div>
       </div>
-      <h1>
+      <div className="tlacitko">
         <Link className="byloA" to="/registration">
           Vyzkoušet PREMIUM na 14 dní ZDARMA
         </Link>
-      </h1>
+      </div>
     </main>
   </>
 );

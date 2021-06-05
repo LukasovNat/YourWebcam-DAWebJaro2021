@@ -19,11 +19,11 @@ export const Main = () => {
           Vámi nasnímané fotky Vám zpětně prezentujeme tak, jak právě
           potřebujete.
         </p>
-        <h1>
+        <div className="tlacitko">
           <Link className="byloA" to="/details">
             Chci se dozvědět více
           </Link>
-        </h1>
+        </div>
       </div>
     </div>
   );

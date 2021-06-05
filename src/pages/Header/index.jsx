@@ -8,7 +8,7 @@ export const Header = () => {
       <header className="hlavicka">
         <div className="logo">
           <img
-            className="ikonka"
+            className="ikonkaCam"
             src="../../assets/iconmonstr-webcam-4-240.png"
             alt="webka"
           />
@@ -40,31 +40,33 @@ export const Header = () => {
               Ceník
             </Link>
           </li>
-
-          <li className="ucetAregistrace">
-            <Link className="byloA" to="/gallery">
-              <img
-                className="ucetAregistrace"
-                src="../../assets/iconmonstr-user-5.svg"
-              />
-              <span className="ucetAregistrace--span">Můj účet</span>
-            </Link>
+        </ul>
+        <ul className="menu">
+          <li>
+            <button className="ucetAregistrace">
+              <Link className="byloA" to="/gallery">
+                <img
+                  className="ikonka"
+                  src="../../assets/iconmonstr-user-5.svg"
+                />
+                Můj účet
+              </Link>
+            </button>
           </li>
-          <li className="ucetAregistrace">
-            <Link className="byloA" to="/registration">
-              <img
-                className="ucetAregistrace"
-                src="../../assets/iconmonstr-edit-5.svg"
-              />
-              <span className="ucetAregistrace--span">Zaregistrovat</span>
-            </Link>
+
+          <li>
+            <button className="ucetAregistrace">
+              <Link className="byloA" to="/registration">
+                <img
+                  className="ikonka"
+                  src="../../assets/iconmonstr-edit-5.svg"
+                />
+                Zaregistrovat
+              </Link>
+            </button>
           </li>
         </ul>
       </header>
-      {/* <Link to="/">Úvod</Link>
-      <Link to="/price-list">Ceník</Link>
-      <Link to="/registration">Registrace</Link>
-      <Link to="/cameras">Podporované web kamery</Link> */}
     </>
   );
 };

@@ -10,18 +10,21 @@ export const Prices = () => {
       <div className="kontejner">
         <section className="fotogalerieCenik" id="dvereGalerie">
           <h2>Galerie a ceník poskytovaných služeb</h2>
-          <p>
+          <h4>
             Balíček <span style={{ color: '#ee9b00' }}>FREE</span>
-            <br />
+          </h4>
+          <p>
             Po přihlášení do uživatelského účtu lze zobrazit historicky poslední
             uložený snímek z kamery. Tato služba je zdarma.
           </p>
-          <p>
+          <h4>
             Balíček <span style={{ color: '#ee9b00' }}>STANDARD</span>
-            <br />
+          </h4>
+          <p>
             Po přihlášení do uživatelského účtu lze zobrazit historicky poslední
-            uložený snimek z kamery. V minuatuře dalších pět předešlých snímků.
-            V historii si lze vybrat snímky za posledních 30 dnů.
+            uložený snimek z kamery. V minuatuře snímky pořízené během Vámi
+            definovaného časového úseku (den, týden atd.). V historii si lze
+            vybrat snímky za posledních 30 dnů.
           </p>
 
           <div className="obrazkyDiv">
@@ -34,7 +37,7 @@ export const Prices = () => {
               <tbody>
                 <tr>
                   <td>
-                    <img className="obrazekPes" src={imgUrl} />
+                    <img className="obrazekPesOriginal" src={imgUrl} />
                   </td>
                 </tr>
                 <tr>
@@ -43,7 +46,7 @@ export const Prices = () => {
               </tbody>
             </table>
             <div className="miniaturyDiv">
-              <table
+              {/* <table
                 className="miniatury"
                 style={{ border: '2' }}
                 height="200px"
@@ -75,20 +78,40 @@ export const Prices = () => {
                     <td>obrazek c. 5</td>
                   </tr>
                 </tbody>
-              </table>
+              </table> */}
+              <div className="obrazekKontejner">
+                <img className="obrazekPes" src={imgUrl} />
+                <span className="obrazekPopis">Popisek</span>
+              </div>
+              <div className="obrazekKontejner">
+                <img className="obrazekPes" src={imgUrl} />
+                <span className="obrazekPopis">Popisek</span>
+              </div>
+              <div className="obrazekKontejner">
+                <img className="obrazekPes" src={imgUrl} />
+                <span className="obrazekPopis">Popisek</span>
+              </div>
+              <div className="obrazekKontejner">
+                <img className="obrazekPes" src={imgUrl} />
+                <span className="obrazekPopis">Popisek</span>
+              </div>
+              <div className="obrazekKontejner">
+                <img className="obrazekPes" src={imgUrl} />
+                <span className="obrazekPopis">Popisek</span>
+              </div>
+              <div className="obrazekKontejner">
+                <img className="obrazekPes" src={imgUrl} />
+                <span className="obrazekPopis">Popisek</span>
+              </div>
+              <div className="obrazekKontejner">
+                <img className="obrazekPes" src={imgUrl} />
+                <span className="obrazekPopis">Popisek</span>
+              </div>
+              <div className="obrazekKontejner">
+                <img className="obrazekPes" src={imgUrl} />
+                <span className="obrazekPopis">Popisek</span>
+              </div>
             </div>
-            {/* <!-- <ul className="fotkyCenik">
-          <li className="obrazekDvereOriginal"src="obrazky/reddoor.jpg" alt="dvere"></li>
-          <li className="obrazekPes"src="obrazky/pes zmenšeno.jpg" alt="pes na pohovce"></li>
-          <li className="obrazekPes"src="obrazky/pes zmenšeno.jpg" alt="pes na pohovce"></li>
-          <li className="obrazekPes"src="obrazky/pes zmenšeno.jpg" alt="pes na pohovce"></li>
-          <li className="obrazekPes"src="obrazky/pes zmenšeno.jpg" alt="pes na pohovce"></li>
-        </ul>--> */}
-
-            {/* <!-- <img className="obrazekPes" src="obrazky/pes zmenšeno.jpg" alt="dvere" />
-      <img className="obrazekPes" src="obrazky/pes zmenšeno.jpg" alt="dvere" />
-      <img className="obrazekPes" src="obrazky/pes zmenšeno.jpg" alt="dvere" />
-      <img className="obrazekPes" src="obrazky/pes zmenšeno.jpg" alt="dvere" />--> */}
           </div>
         </section>
       </div>

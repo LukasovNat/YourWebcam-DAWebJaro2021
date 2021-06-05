@@ -5,7 +5,7 @@ export const Registration = () => {
   return (
     <>
       <div className="kontejner">
-        <h3>REGISTRACE Vášeho účtu YOUR WEBCAM</h3>
+        <h2>REGISTRACE Vášeho účtu YOUR WEBCAM</h2>
         <p>
           S účtem Your Webcam budete jednoduše ovládat a spravovat Vaší historii
           snímků s těmito výhodami:
@@ -26,7 +26,7 @@ export const Registration = () => {
         <form method="POST" className="formularRegistrace" action="https://">
           {/* <!--Zacatek poli uctu--> */}
           <fieldset>
-            <h3>Jsem nový zákazník</h3>
+            <h4>Jsem nový zákazník</h4>
             <ul className="formularovePole">
               <li>
                 <label htmlFor="jmeno">Jméno: </label>
@@ -61,7 +61,7 @@ export const Registration = () => {
           {/* <!--Konec poli uctu--> */}
           {/* <!--Zacatak poli adresy--> */}
           <fieldset>
-            <h3>Adresa</h3>
+            <h4>Adresa</h4>
             <ul className="formularovePole">
               <li>
                 <label htmlFor="ulice_a cislo_domu">Ulice a číslo domu: </label>
@@ -94,7 +94,7 @@ export const Registration = () => {
           {/* <!--Konec pole adresy--> */}
           {/* <!--Zacatek vyber sluzby--> */}
           <fieldset>
-            <h3>Výběr poskytovaného balíčku služeb</h3>
+            <h4>Výběr poskytovaného balíčku služeb</h4>
             <ul className="formularovePole">
               <li className="buttonVyber">
                 <label htmlFor="typ_sluzby">Free </label>
