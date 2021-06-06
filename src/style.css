@@ -73,13 +73,13 @@ h1 {
   color: #413e3e;
   text-decoration: none;
   font-weight: bold;
-  padding: 8px;
-  font-size: 1.2rem;
+
+  font-size: 1.5rem;
 }
 .byloA:hover {
   background-color: darkgray;
   color: white;
-  margin: 0;
+
   border-radius: 1.5rem;
 }
 .menu {
@@ -100,6 +100,7 @@ ul {
   position: relative;
   left: auto;
   padding-bottom: 2px;
+  padding-right: 4px;
 }
 .ikonkaCam {
   width: 2.5rem;
@@ -119,6 +120,7 @@ ul {
   font-weight: bolder;
   border-radius: 1.5rem;
   display: inline-flex;
+  padding: 6px 18px;
 }
 .menu li {
   margin: 0.5em 1.5em;
@@ -155,7 +157,7 @@ li img {
   margin-top: -100px;
 }
 .kontejner {
-  max-width: 45rem;
+  max-width: 43rem;
   margin: auto;
 }
 p {
@@ -290,7 +292,7 @@ h3 {
   border-radius: 10px;
 }
 fieldset {
-  background-color: #f1f1f1;
+  background-color: #d0b8ac;
   border: none;
   border-radius: 2px;
   margin-bottom: 12px;
@@ -324,6 +326,7 @@ input {
   background-color: #ee9b00;
   font-family: 'Oswald';
   color: #141414;
+  margin-bottom: 20px;
 } /*konec*/
 /*stylovani muj ucet*/
 

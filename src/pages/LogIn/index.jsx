@@ -9,14 +9,13 @@ export const Login = () => {
           Přihlášení do uživatelského účtu
         </p>
         <p className="prihlaseniUzivatelskyUcet--uvitani">
-          Již mám vytvořený uživatelský účet. Prosím vložte svoji e-mailovou
+          Již mám vytvořený uživatelský účet. Prosím vložte svoji emailovou
           adresu a heslo:
         </p>
       </div>
       <div className="prihlaseniUzivatelskyUcet--div">
         <form method="POST" className="formularRegistrace" action="https://">
           <fieldset>
-            <h4>Jsem nový zákazník</h4>
             <ul className="formularovePole">
               <li>
                 <label for="email">E-mail: </label>
@@ -29,7 +28,7 @@ export const Login = () => {
             </ul>
           </fieldset>
           <fieldset>
-            <input type="submit" className="vytvorit_ucet" value="Potvrdit" />
+            <input type="submit" className="vytvorit_ucet" value="Přihlásit" />
           </fieldset>
         </form>
       </div>

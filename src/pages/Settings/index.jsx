@@ -30,12 +30,11 @@ export const Settings = () => {
         </p>
         <hr />
         <h4></h4>
-        <button className="ucetAregistrace">
-          <Link className="byloA" to="/registration">
-            <img className="ikonka" src="../../assets/iconmonstr-edit-5.svg" />
-            Změnit údaje
-          </Link>
-        </button>
+
+        <Link className="ucetAregistrace byloA" to="/registration">
+          <img className="ikonka" src="../../assets/iconmonstr-edit-5.svg" />
+          Změnit údaje
+        </Link>
       </div>
     </>
   );

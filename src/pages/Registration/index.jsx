@@ -19,11 +19,11 @@ export const Registration = ({ handleLogin }) => {
           snímků s těmito výhodami:
         </p>
         <div className="obrazRegistrace">
-          <ul>
-            <li>Jednoduché ovládání po zadání e-mailové adresy a hesla.</li>
-            <li>Přehled a sledování snímku ve vámi určený časový horizont.</li>
-            <li>Možnost zaslání vybraných snímků na libovolný e-mail.</li>
-          </ul>
+          <p>
+            Jednoduché ovládání po zadání e-mailové adresy a hesla. Přehled a
+            sledování snímku ve vámi určený časový horizont. Možnost zaslání
+            vybraných snímků na libovolný e-mail.
+          </p>
           <img
             className="imgRegistrace"
             src="../../assets/registrace.jpg"
@@ -60,35 +60,48 @@ export const Registration = ({ handleLogin }) => {
                   id="prijmeni"
                   name="prijmeni"
                   className="velke"
+                  required="required"
                 />
               </li>
               <li>
                 <label htmlFor="email">E-mail: </label>
-                <input type="email" id="email" name="email" className="velke" />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="velke"
+                  required="required"
+                />
               </li>
               <li>
                 <label htmlFor="heslo">Heslo: </label>
-                <input type="heslo" id="heslo" name="heslo" className="velke" />
+                <input
+                  type="heslo"
+                  id="heslo"
+                  name="heslo"
+                  className="velke"
+                  required="required"
+                />
               </li>
             </ul>
           </fieldset>
           {/* <!--Konec poli uctu--> */}
           {/* <!--Zacatak poli adresy--> */}
           <fieldset>
-            <h4>Adresa</h4>
+            <h4>Údaje o Vaší kameře</h4>
             <ul className="formularovePole">
               <li>
-                <label htmlFor="ulice_a cislo_domu">Ulice a číslo domu: </label>
+                <label htmlFor="udaje_o_kamere">Značka: </label>
                 <input
                   type="text"
-                  id="ulice_a cislo_domu"
-                  name="ulice_a cislo_domu"
+                  id="udaje_o_kamere"
+                  name="udaje_o_kamere"
                   className="velke"
                 />
               </li>
               <li>
-                <label htmlFor="mesto">Město: </label>
-                <input type="text" id="mesto" name="mesto" className="velke" />
+                <label htmlFor="mesto">Typ: </label>
+                <input type="text" id="typ" name="typ" className="velke" />
               </li>
               {/* <!--<li>
               <label htmlFor="stat">Stát: </label>
@@ -99,10 +112,6 @@ export const Registration = ({ handleLogin }) => {
                 <option value="Pl">Polsko</option>
               </select>
             </li>--> */}
-              <li>
-                <label htmlFor="psc">PSČ: </label>
-                <input type="text" id="psc" name="psc" className="male" />
-              </li>
             </ul>
           </fieldset>
           {/* <!--Konec pole adresy--> */}
