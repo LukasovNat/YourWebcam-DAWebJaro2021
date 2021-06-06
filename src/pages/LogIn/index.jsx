@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 export const Login = () => {
@@ -31,6 +32,9 @@ export const Login = () => {
             <input type="submit" className="vytvorit_ucet" value="Přihlásit" />
           </fieldset>
         </form>
+        <Link className="ztrataHesla" to="/login">
+          Zapomněli jste heslo?
+        </Link>
       </div>
     </>
   );

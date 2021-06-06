@@ -30,3 +30,11 @@
   font-family: 'Oswald';
   line-height: 2.5rem;
 }
+.ztrataHesla {
+  color: black;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.ztrataHesla:hover {
+  color: red;
+}

@@ -79,12 +79,11 @@ h1 {
 .byloA:hover {
   background-color: darkgray;
   color: white;
-
   border-radius: 1.5rem;
 }
-.menu {
+.menu--nav,
+.menu--auth {
   display: flex;
-  margin-right: 15px;
 }
 ul {
   list-style: none;
@@ -94,6 +93,7 @@ ul {
   font-size: 2.2rem;
   margin: 10px;
   color: #413e3e;
+  white-space: nowrap;
 }
 .ikonka {
   width: 1rem;
@@ -122,7 +122,7 @@ ul {
   display: inline-flex;
   padding: 6px 18px;
 }
-.menu li {
+.menu--nav li {
   margin: 0.5em 1.5em;
 }
 li img {
@@ -213,9 +213,10 @@ h3 {
   font-size: 48px;
 }
 .domu {
-  width: 720px;
+  width: 665px;
   margin-top: 30px;
   border-radius: 0.5rem;
+  max-width: 100%;
 }
 /*stylovani Prices (galerie v ceniku)*/
 .obrazkyDiv {
@@ -399,33 +400,30 @@ td {
     margin: auto;
   }
 }
+@media (min-width: 1026px) {
+  .byloA {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .byloA {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .menu--auth {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .menu--auth li {
+    margin-top: -0.7px;
+    margin-bottom: 4px;
+  }
+}
 @media (max-width: 575px) {
   .kontejner {
     width: 100%;
-  }
-}
-
-/*@media (max-width: 576px) {
-  .menu {
-    width: 50%;
-    font-size: 10px;
-  }
-}*/
-@media (max-width: 800px) {
-  .menu {
-    width: 60%;
-    font-size: 1rem;
-  }
-}
-@media (min-width: 575px) {
-  .hamburgerMenu {
-    display: none;
-  }
-}
-@media (max-width: 575px) {
-  .menu,
-  li button {
-    display: none;
   }
 }
 @media (max-width: 575px) {
@@ -453,5 +451,17 @@ td {
   p {
     font-size: 0.7rem;
     text-align: justify;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hamburgerMenu {
+    display: none;
+  }
+}
+@media (max-width: 1025px) {
+  .menu--nav,
+  .menu--auth {
+    display: none;
   }
 }

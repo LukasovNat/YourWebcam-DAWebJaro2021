@@ -19,7 +19,7 @@ export const Header = ({ isLogged }) => {
             <span className="hamburgerMenu--span">≡ Menu</span>
           </p>
         </div>
-        <ul className="menu">
+        <ul className="menu--nav">
           <li>
             <Link className="byloA" to="/">
               ÚVOD
@@ -41,12 +41,12 @@ export const Header = ({ isLogged }) => {
             </Link>
           </li>
         </ul>
-        <ul className="menu">
+        <ul className="menu--auth">
           {isLogged
             ? console.log('User je lognuty')
             : console.log('User neni lognuty')}
           <li>
-            <Link className="ucetAregistrace byloA" to="/gallery">
+            <Link className="ucetAregistrace byloA" to="/login">
               <img
                 className="ikonka"
                 src="../../assets/iconmonstr-user-5.svg"
