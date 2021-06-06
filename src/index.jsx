@@ -10,6 +10,8 @@ import { Registration } from './pages/Registration';
 import './style.css';
 import { Details } from './pages/Details';
 import { Gallery } from './pages/Gallery';
+import { Login } from './pages/LogIn';
+import { Settings } from './pages/Settings';
 
 const App = () => {
   const [isLogged, setIsLogged] = useState(false);
@@ -36,6 +38,12 @@ const App = () => {
           </Route>
           <Route path="/gallery">
             <Gallery />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/settings">
+            <Settings />
           </Route>
         </Switch>
       </Router>
