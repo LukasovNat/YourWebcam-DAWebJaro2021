@@ -1,7 +1,15 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import './style.css';
 
-export const Registration = () => {
+export const Registration = ({ handleLogin }) => {
+  let history = useHistory();
+  const register = (event) => {
+    event.preventDefault();
+    handleLogin(true);
+    history.push('/gallery');
+  };
+
   return (
     <>
       <div className="kontejner">
@@ -23,7 +31,13 @@ export const Registration = () => {
           />
         </div>
         <hr />
-        <form method="POST" className="formularRegistrace" action="https://">
+        {/* TODO check if registration was successfull before loging */}
+        <form
+          onSubmit={register}
+          method="POST"
+          className="formularRegistrace"
+          action="https://"
+        >
           {/* <!--Zacatek poli uctu--> */}
           <fieldset>
             <h4>Jsem nový zákazník</h4>

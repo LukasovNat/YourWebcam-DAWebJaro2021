@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 
-export const Header = () => {
+export const Header = ({ isLogged }) => {
   return (
     <>
       <header className="hlavicka">
@@ -42,28 +42,27 @@ export const Header = () => {
           </li>
         </ul>
         <ul className="menu">
+          {isLogged
+            ? console.log('User je lognuty')
+            : console.log('User neni lognuty')}
           <li>
-            <button className="ucetAregistrace">
-              <Link className="byloA" to="/gallery">
-                <img
-                  className="ikonka"
-                  src="../../assets/iconmonstr-user-5.svg"
-                />
-                Můj účet
-              </Link>
-            </button>
+            <Link className="ucetAregistrace byloA" to="/gallery">
+              <img
+                className="ikonka"
+                src="../../assets/iconmonstr-user-5.svg"
+              />
+              Můj účet
+            </Link>
           </li>
 
           <li>
-            <button className="ucetAregistrace">
-              <Link className="byloA" to="/registration">
-                <img
-                  className="ikonka"
-                  src="../../assets/iconmonstr-edit-5.svg"
-                />
-                Zaregistrovat
-              </Link>
-            </button>
+            <Link className="ucetAregistrace byloA" to="/registration">
+              <img
+                className="ikonka"
+                src="../../assets/iconmonstr-edit-5.svg"
+              />
+              Zaregistrovat
+            </Link>
           </li>
         </ul>
       </header>

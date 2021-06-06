@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Header } from './pages/Header';
 import { Footer } from './pages/Footer';
 import { Cameras } from './pages/Cameras';
@@ -11,33 +11,37 @@ import './style.css';
 import { Details } from './pages/Details';
 import { Gallery } from './pages/Gallery';
 
-const App = () => (
-  <>
-    <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/">
-          <Main />
-        </Route>
-        <Route path="/price-list">
-          <Prices />
-        </Route>
-        <Route path="/registration">
-          <Registration />
-        </Route>
-        <Route path="/cameras">
-          <Cameras />
-        </Route>
-        <Route path="/details">
-          <Details />
-        </Route>
-        <Route path="/gallery">
-          <Gallery />
-        </Route>
-      </Switch>
-    </Router>
-    <Footer />
-  </>
-);
+const App = () => {
+  const [isLogged, setIsLogged] = useState(false);
+
+  return (
+    <>
+      <Router>
+        <Header isLogged={isLogged} />
+        <Switch>
+          <Route exact path="/">
+            <Main />
+          </Route>
+          <Route path="/price-list">
+            <Prices />
+          </Route>
+          <Route path="/registration">
+            <Registration handleLogin={setIsLogged} />
+          </Route>
+          <Route path="/cameras">
+            <Cameras />
+          </Route>
+          <Route path="/details">
+            <Details />
+          </Route>
+          <Route path="/gallery">
+            <Gallery />
+          </Route>
+        </Switch>
+      </Router>
+      <Footer />
+    </>
+  );
+};
 
 render(<App />, document.querySelector('#app'));
