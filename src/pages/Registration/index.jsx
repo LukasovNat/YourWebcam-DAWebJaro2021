@@ -43,7 +43,7 @@ export const Registration = ({ handleLogin }) => {
             <h4>Jsem nový zákazník</h4>
             <ul className="formularovePole">
               <li>
-                <label htmlFor="jmeno">Jméno: </label>
+                <label for="jmeno">Jméno: </label>
                 <input
                   type="text"
                   id="jmeno"
@@ -54,7 +54,7 @@ export const Registration = ({ handleLogin }) => {
                 />
               </li>
               <li>
-                <label htmlFor="prijmeni">Příjmení: </label>
+                <label for="prijmeni">Příjmení: </label>
                 <input
                   type="text"
                   id="prijmeni"
@@ -65,7 +65,7 @@ export const Registration = ({ handleLogin }) => {
                 />
               </li>
               <li>
-                <label htmlFor="email">E-mail: </label>
+                <label for="email">E-mail: </label>
                 <input
                   type="email"
                   id="email"
@@ -76,7 +76,7 @@ export const Registration = ({ handleLogin }) => {
                 />
               </li>
               <li>
-                <label htmlFor="heslo">Heslo: </label>
+                <label for="heslo">Heslo: </label>
                 <input
                   type="password"
                   id="heslo"
@@ -94,7 +94,7 @@ export const Registration = ({ handleLogin }) => {
             <h4>Údaje o Vaší kameře</h4>
             <ul className="formularovePole">
               <li>
-                <label htmlFor="udaje_o_kamere">Výrobce : </label>
+                <label for="udaje_o_kamere">Výrobce : </label>
                 <select id="znacka" name="kamera">
                   <option value="S" className="velke">
                     SONY
@@ -105,7 +105,7 @@ export const Registration = ({ handleLogin }) => {
                 </select>
               </li>
               <li>
-                <label htmlFor="modelNo">Model Number: </label>
+                <label for="modelNo">Model Number: </label>
                 <input
                   type="text"
                   id="typ"
@@ -122,19 +122,19 @@ export const Registration = ({ handleLogin }) => {
             <h4>Výběr poskytovaného balíčku služeb</h4>
             <ul className="formularovePole">
               <li className="buttonVyber">
-                <label htmlFor="typ_sluzby">Free </label>
-                <input type="radio" value="souhlasim" id="typ_sluzby" />
+                <label for="typ_sluzby">Free </label>
+                <input type="radio" value="souhlasim" id="free" />
               </li>
               <li className="buttonVyber">
-                <label htmlFor="typ_sluzby">Standard </label>
-                <input type="radio" value="souhlasim" id="typ_sluzby" />
+                <label for="typ_sluzby">Standard </label>
+                <input type="radio" value="souhlasim" id="standard" />
               </li>
               <li className="buttonVyber">
-                <label htmlFor="typ_sluzby">Premium</label>
-                <input type="radio" value="souhlasim" id="typ_sluzby" />
+                <label for="typ_sluzby">Premium</label>
+                <input type="radio" value="souhlasim" id="premium" />
               </li>
               <li className="buttonVyber">
-                <label htmlFor="typ_sluzby">
+                <label for="typ_sluzby">
                   Vyzkoušet Premium na 14 dní ZDARMA
                 </label>
                 <input type="radio" value="souhlasim" id="typ_sluzby" />

@@ -37,7 +37,7 @@ export const Gallery = () => {
         <p className="ucetUvod">
           Dobrý den,
           <br />v této sekci najdete přehled Vašich odeslaných snímků, které si
-          zpetně můžete libovolně prohlížet.
+          zpětně můžete libovolně prohlížet.
         </p>
 
         <div className="ucetForm">
