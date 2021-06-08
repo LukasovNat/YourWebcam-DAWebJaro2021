@@ -51,7 +51,7 @@ export const Header = ({ isLogged }) => {
                 className="ikonka"
                 src="../../assets/iconmonstr-user-5.svg"
               />
-              Přihlásit se
+              Přihlásit
             </Link>
           </li>
 

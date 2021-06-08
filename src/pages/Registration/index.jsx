@@ -13,7 +13,7 @@ export const Registration = ({ handleLogin }) => {
   return (
     <>
       <div className="kontejner">
-        <h2>REGISTRACE Vášeho účtu YOUR WEBCAM</h2>
+        <h2>Zřízení nového účtu </h2>
         <p>
           S účtem Your Webcam budete jednoduše ovládat a spravovat Vaší historii
           snímků s těmito výhodami:
@@ -61,6 +61,7 @@ export const Registration = ({ handleLogin }) => {
                   name="prijmeni"
                   className="velke"
                   required="required"
+                  placeholder="Zadejte své příjmení"
                 />
               </li>
               <li>
@@ -71,16 +72,18 @@ export const Registration = ({ handleLogin }) => {
                   name="email"
                   className="velke"
                   required="required"
+                  placeholder="Napište svou emailovou adresu"
                 />
               </li>
               <li>
                 <label htmlFor="heslo">Heslo: </label>
                 <input
-                  type="heslo"
+                  type="password"
                   id="heslo"
                   name="heslo"
                   className="velke"
                   required="required"
+                  placeholder="Heslo - minimálně 8 znaků"
                 />
               </li>
             </ul>
@@ -91,27 +94,26 @@ export const Registration = ({ handleLogin }) => {
             <h4>Údaje o Vaší kameře</h4>
             <ul className="formularovePole">
               <li>
-                <label htmlFor="udaje_o_kamere">Značka: </label>
-                <input
-                  type="text"
-                  id="udaje_o_kamere"
-                  name="udaje_o_kamere"
-                  className="velke"
-                />
+                <label htmlFor="udaje_o_kamere">Výrobce : </label>
+                <select id="znacka" name="kamera">
+                  <option value="S" className="velke">
+                    SONY
+                  </option>
+                  <option value="HV">HighVision</option>
+                  <option value="A">Axis</option>
+                  <option value="D">Dahua</option>
+                </select>
               </li>
               <li>
-                <label htmlFor="mesto">Typ: </label>
-                <input type="text" id="typ" name="typ" className="velke" />
+                <label htmlFor="modelNo">Model Number: </label>
+                <input
+                  type="text"
+                  id="typ"
+                  name="typ"
+                  className="velke"
+                  placeholder="Např.DS-2CD4A26FWD-IPZ-P (číslo uvedené na vaší webové kameře)"
+                />
               </li>
-              {/* <!--<li>
-              <label htmlFor="stat">Stát: </label>
-              <select id="stat" name="stat">
-                <option value="CZ" className="velke">Česká republika</option>
-                <option value="SK">Slovensko</option>
-                <option value="DE">Něměcko</option>
-                <option value="Pl">Polsko</option>
-              </select>
-            </li>--> */}
             </ul>
           </fieldset>
           {/* <!--Konec pole adresy--> */}

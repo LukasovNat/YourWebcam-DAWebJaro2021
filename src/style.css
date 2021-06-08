@@ -79,22 +79,18 @@ h1 {
 .byloA:hover {
   background-color: darkgray;
   color: white;
-  border-radius: 1.5rem;
+
+  /*border-radius: 1.5rem;*/
 }
 .menu--nav,
 .menu--auth {
   display: flex;
 }
+
 ul {
   list-style: none;
 }
-.logo {
-  font-weight: bold;
-  font-size: 2.2rem;
-  margin: 10px;
-  color: #413e3e;
-  white-space: nowrap;
-}
+
 .ikonka {
   width: 1rem;
   position: relative;
@@ -141,6 +137,7 @@ li img {
   max-width: 80%;
   margin: auto;
   height: 800px;
+  margin-top: 5px;
 }
 .uvodSlogan {
   font-family: 'Oswald';
@@ -148,6 +145,11 @@ li img {
   font-weight: bold;
   text-align: center;
   line-height: 5rem;
+}
+.hamburgerMenu--span {
+  font-size: 1.5rem;
+  color: #413e3e;
+  margin-right: 10px;
 }
 .vlozenyDiv {
   width: 30rem;
@@ -182,7 +184,7 @@ p {
   background-color: #197278; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -327,7 +329,6 @@ input {
   background-color: #ee9b00;
   font-family: 'Oswald';
   color: #141414;
-  margin-bottom: 20px;
 } /*konec*/
 /*stylovani muj ucet*/
 
@@ -395,24 +396,61 @@ td {
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
-
     opacity: 80%;
-    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 99%;
   }
 }
-@media (min-width: 1026px) {
+@media (max-width: 575px) {
+  .vlozenyDiv {
+    width: 17rem;
+    height: 7rem;
+    margin-top: -350px;
+  }
+}
+@media (max-width: 575px) {
+  .uvodText {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 575px) {
+  .uvodSlogan {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+@media (max-width: 575px) {
+  .paticka {
+  }
+}
+@media (max-width: 1199px) {
+  .byloA {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1200px) {
   .byloA {
     font-size: 1.2rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .byloA {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
+@media (min-width: 1025px) {
+  .menu--nav,
+  .menu--auth {
+    margin: 10px;
+  }
+}
+
 @media (min-width: 1200px) {
   .menu--auth {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 @media (min-width: 1200px) {

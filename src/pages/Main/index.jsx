@@ -23,7 +23,7 @@ export const Main = () => {
       </div>
       <div className="vlozenyDiv">
         <p className="uvodText">
-          Už se nemusíte obávat o své auto před domem, ani pohybu dětí u bazénu.
+          Už se nemusíte obávat o své auto před domem!
           <br />
           Vámi nasnímané fotky Vám zpětně prezentujeme tak, jak právě
           potřebujete.

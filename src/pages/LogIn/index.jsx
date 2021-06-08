@@ -24,7 +24,12 @@ export const Login = () => {
               </li>
               <li>
                 <label for="heslo">Heslo: </label>
-                <input type="heslo" id="heslo" name="heslo" className="velke" />
+                <input
+                  type="password"
+                  id="heslo"
+                  name="heslo"
+                  className="velke"
+                />
               </li>
             </ul>
           </fieldset>
