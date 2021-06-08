@@ -10,15 +10,22 @@ export const Prices = () => {
       <div className="kontejner">
         <section className="fotogalerieCenik" id="dvereGalerie">
           <h2>Galerie a ceník poskytovaných služeb</h2>
-          <h4>
+          <hr />
+          <h3>
             Balíček <span style={{ color: '#ee9b00' }}>FREE</span>
+          </h3>
+          <h4>
+            <span style={{ color: '#e63946' }}>ZDARMA</span>
           </h4>
           <p>
             Po přihlášení do uživatelského účtu lze zobrazit historicky poslední
             uložený snímek z kamery. Tato služba je zdarma.
           </p>
-          <h4>
+          <h3>
             Balíček <span style={{ color: '#ee9b00' }}>STANDARD</span>
+          </h3>
+          <h4>
+            <span style={{ color: '#e63946' }}>25 Kč/měsíc vč. DPH</span>
           </h4>
           <p>
             Po přihlášení do uživatelského účtu lze zobrazit historicky poslední

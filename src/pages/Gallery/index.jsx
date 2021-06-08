@@ -39,8 +39,27 @@ export const Gallery = () => {
           <br />v této sekci najdete přehled Vašich odeslaných snímků, které si
           zpetně můžete libovolně prohlížet.
         </p>
+
         <div className="ucetForm">
-          <form>
+          <form method="POST" className="formularRegistrace" action="https://">
+            <fieldset>
+              <ul className="formularovePole">
+                <li>
+                  <label for="date">Filtruj snimky podle data a času</label>
+                  <input
+                    type="datetime-local"
+                    id="datum"
+                    name="date"
+                    className="velke"
+                  />
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <input type="submit" className="vytvorit_ucet" value="Filtruj" />
+            </fieldset>
+          </form>
+          {/* <form>
             <label className="ucetFiltr">
               Filtruj snimky dle času pořízení:
               <input name="datum" type="date" />
@@ -49,41 +68,44 @@ export const Gallery = () => {
         </div>
         <button type="submit" className="buttonHlavni">
           Filtruj
-        </button>
-        <hr />
-        <div className="container">
-          <div className="obrazkyDiv">
-            <table
-              className="aktualniSnimek"
-              style={{ border: '2' }}
-              height=" 400px"
-              width="350px"
-            >
-              <tbody>
-                <tr>
-                  <td>
-                    <img className="obrazekAutoOriginal" src={currentPic.url} />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span className="obrazekPopis">{currentPic.label}</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div className="miniaturyDiv">
-              {testPicDb.map((pic) => (
-                <Obrazek
-                  url={pic.url}
-                  label={pic.label}
-                  handleClick={changePic}
-                  key={pic.id}
-                />
-              ))}
+  </button>*/}
+          <hr />
+          <div className="container">
+            <div className="obrazkyDiv">
+              <table
+                className="aktualniSnimek"
+                style={{ border: '2' }}
+                height=" 400px"
+                width="350px"
+              >
+                <tbody>
+                  <tr>
+                    <td>
+                      <img
+                        className="obrazekAutoOriginal"
+                        src={currentPic.url}
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span className="obrazekPopis">{currentPic.label}</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div className="miniaturyDiv">
+                {testPicDb.map((pic) => (
+                  <Obrazek
+                    url={pic.url}
+                    label={pic.label}
+                    handleClick={changePic}
+                    key={pic.id}
+                  />
+                ))}
+              </div>
             </div>
-          </div>
-          {/* <!--<div className="gallery">
+            {/* <!--<div className="gallery">
         <img src="obrazky/Martin auto.jpg">
         <div className="desc">Snimek ze dne: </div>
         <div className="radioBtn">
@@ -163,6 +185,7 @@ export const Gallery = () => {
           </label>
         </div>
       </div>--> */}
+          </div>
         </div>
       </div>
     </>

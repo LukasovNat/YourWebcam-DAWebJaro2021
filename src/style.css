@@ -15,23 +15,23 @@ body {
   background-attachment: fixed;
   background: hsla(20, 28%, 75%, 1);
 
-  background: linear-gradient(
+  /*background: linear-gradient(
     360deg,
     hsla(20, 28%, 75%, 1) 0%,
     hsla(23, 65%, 87%, 1) 25%,
     hsla(28, 37%, 90%, 1) 50%,
     hsla(120, 60%, 99%, 1) 75%,
     hsla(0, 0%, 100%, 1) 100%
-  );
+  );*/
 
-  background: -moz-linear-gradient(
+  /* background: -moz-linear-gradient(
     360deg,
     hsla(20, 28%, 75%, 1) 0%,
     hsla(23, 65%, 87%, 1) 25%,
     hsla(28, 37%, 90%, 1) 50%,
     hsla(120, 60%, 99%, 1) 75%,
     hsla(0, 0%, 100%, 1) 100%
-  );
+  );*/
 
   background: -webkit-linear-gradient(
     360deg,
@@ -73,14 +73,12 @@ h1 {
   color: #413e3e;
   text-decoration: none;
   font-weight: bold;
-
   font-size: 1.5rem;
 }
-.byloA:hover {
+.byloA :hover {
   background-color: darkgray;
   color: white;
-
-  /*border-radius: 1.5rem;*/
+  border-radius: 1.5rem;
 }
 .menu--nav,
 .menu--auth {
