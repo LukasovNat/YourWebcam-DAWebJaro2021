@@ -38,3 +38,25 @@
 .ztrataHesla:hover {
   color: red;
 }
+@media (max-width: 655px) {
+  .prihlaseniUzivatelskyUcet {
+    max-height: 270px;
+    max-width: 80%;
+  }
+}
+@media (max-width: 655px) {
+  .prihlaseniUzivatelskyUcet--div {
+    max-width: 100%;
+  }
+}
+@media (max-width: 655px) {
+  .prihlaseniUzivatelskyUcet--nadpis {
+    font-size: 1.5rem;
+    color: whitesmoke;
+  }
+}
+@media (max-width: 655px) {
+  .prihlaseniUzivatelskyUcet--uvitani {
+    display: none;
+  }
+}

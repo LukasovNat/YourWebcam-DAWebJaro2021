@@ -68,17 +68,28 @@ h1 {
   align-items: baseline;
 } */
 
-.byloA {
+.menu--nav .byloA {
   color: #413e3e;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
   border-bottom: 2px solid transparent;
 }
-.byloA:hover,
-.byloA:active {
+.menu--nav .byloA:hover,
+.menu--nav .byloA:active {
+  color: whitesmoke;
   transition: border-bottom 0.5s;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #413e3e;
+}
+.byloA {
+  text-decoration: none;
+  font-family: 'Oswald';
+  color: #413e3e;
+  font-size: 1.5rem;
+}
+.menu--auth .byloA:hover {
+  background-color: #413e3e;
+  border-radius: 1.5em;
 }
 /*.byloA:hover,
 .byloA:active {
@@ -138,10 +149,9 @@ li img {
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
-  height: 800px;
-  margin-top: 5px;
+  height: 600px;
 }
 .uvodSlogan {
   font-family: 'Oswald';
@@ -211,6 +221,14 @@ h2 {
   background-color: #ee9b00;
   border-radius: 1.5rem;
   text-align: center;
+}
+
+.buttonHlavni:hover {
+  background-color: darkgrey;
+  border-radius: 1.5em;
+}
+.tlacitko:hover {
+  background-color: darkgrey;
 }
 /*konec Detail*/
 /*stylovani stranky domu*/
@@ -297,6 +315,7 @@ h3 {
 .imgRegistrace {
   max-width: 50%;
   border-radius: 10px;
+  margin-right: 10px;
 }
 fieldset {
   background-color: #d0b8ac;
@@ -384,6 +403,8 @@ td {
   font-size: 1rem;
   text-align: start;
 }
+/*stylovani login*/
+
 /*footer*/
 .paticka {
   color: #413e3e;
@@ -400,17 +421,18 @@ td {
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
-    opacity: 80%;
     margin-left: 10px;
     margin-right: 10px;
     max-width: 99%;
+    height: 480px;
   }
 }
 @media (max-width: 575px) {
   .vlozenyDiv {
-    width: 17rem;
+    /*width: 17rem;
     height: 7rem;
-    margin-top: -350px;
+    margin-top: -350px;*/
+    display: none;
   }
 }
 @media (max-width: 575px) {
@@ -428,17 +450,20 @@ td {
 }
 
 @media (max-width: 1199px) {
-  .byloA {
+  .menu--nav .byloA,
+  .menu--auth .byloA {
     font-size: 0.8rem;
   }
 }
 @media (min-width: 1200px) {
-  .byloA {
+  .menu--nav .byloA,
+  .menu--auth .byloA {
     font-size: 1.2rem;
   }
 }
 @media (min-width: 1600px) {
-  .byloA {
+  .menu--nav .byloA,
+  .menu--auth .byloA {
     font-size: 1.6rem;
   }
 }

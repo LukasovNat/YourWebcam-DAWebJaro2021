@@ -15,12 +15,15 @@ export const Details = () => (
             pod vizuální kontrolou? Nechcete utrácet peníze za finančně náročné
             zabezpečovací systémy?
             <br />
-            Nabízíme Vám jednoduché řešení dostupné pro kohokoliv, kdo vlastní{' '}
-            <strong>funkční webkameru</strong>, která je schopna v definovaném
-            čase zasílat nasnímané fotky snímky na určenou adresu. A na Vás je
-            už jen z pohodlí hotelového pokoje na druhém konci světa sledovat,
-            zda před vašimi dveřmi není nečekaná návštěva nebo je vozidlo
-            zaparkované, tak, jak jste jej před odjezdem zanechali.
+            <strong>
+              Nabízíme Vám jednoduché řešení dostupné pro kohokoliv, kdo vlastní{' '}
+              funkční webkameru, která je schopna v definovaném čase zasílat
+              nasnímané fotky snímky na určenou adresu.
+            </strong>{' '}
+            <br />
+            A na Vás je už jen z pohodlí hotelového pokoje na druhém konci světa
+            sledovat, zda před vašimi dveřmi není nečekaná návštěva nebo je
+            vozidlo zaparkované, tak, jak jste jej před odjezdem zanechali.
             <br />
           </p>
         </div>
@@ -56,7 +59,7 @@ export const Details = () => (
       </div>
       <div className="tlacitko">
         <Link className="byloA" to="/registration">
-          Vyzkoušet PREMIUM na 14 dní ZDARMA
+          <strong>Vyzkoušet</strong> PREMIUM na 14 dní <strong>ZDARMA</strong>
         </Link>
       </div>
     </main>
