@@ -36,48 +36,14 @@ export const Gallery = () => {
         <h2>Vítejte "XY" ve svém uživatelském účtu!</h2>
         <p className="ucetUvod">
           Dobrý den,
-          <br />v této sekci najdete přehled Vašich odeslaných snímků, které si
-          zpětně můžete libovolně prohlížet.
+          <br />v této sekci najdete přehled Vašich snímků, které si zpětně
+          můžete prohlížet. <br /> V základní verzi zobrazujeme historicky
+          posledni snímek a v miniatuře 5 snímků, které byly z kamery uloženy.
+          <br />V rámci služby STANDARD můžete zobrazit snímky ve Vámi
+          definovaném čase. Maximální možný počet zobrazených snímků v galerii
+          je 40 fotografií.
         </p>
-
         <div className="ucetForm">
-          <form method="POST" className="formularRegistrace" action="https://">
-            <fieldset>
-              <ul className="formularovePole">
-                <li>
-                  <label for="date">Zobrazuj snímky OD</label>
-                  <input
-                    type="datetime-local"
-                    id="dateFrom"
-                    name="date"
-                    className="velke"
-                  />
-                </li>
-                <li>
-                  <label for="date">Zobrazuj snímky DO</label>
-                  <input
-                    type="datetime-local"
-                    id="dateTo"
-                    name="date"
-                    className="velke"
-                  />
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <input type="submit" className="vytvorit_ucet" value="Filtruj" />
-            </fieldset>
-          </form>
-          {/* <form>
-            <label className="ucetFiltr">
-              Filtruj snimky dle času pořízení:
-              <input name="datum" type="date" />
-            </label>
-          </form>
-        </div>
-        <button type="submit" className="buttonHlavni">
-          Filtruj
-  </button>*/}
           <hr />
           <div className="container">
             <div className="obrazkyDiv">
@@ -114,87 +80,35 @@ export const Gallery = () => {
                 ))}
               </div>
             </div>
-            {/* <!--<div className="gallery">
-        <img src="obrazky/Martin auto.jpg">
-        <div className="desc">Snimek ze dne: </div>
-        <div className="radioBtn">
-          <label className="desc">
-            zaslat na email
-            <input name="vybrat" type="radio" value="souhlasim">
-          </label>
-        </div>
-      </div>
-      <div className="gallery">
-        <img src="obrazky/Martin auto.jpg">
-        <div className="desc">Snimek ze dne: </div>
-        <div className="radioBtn">
-          <label className="desc">
-            zaslat na email
-            <input name="vybrat" type="radio" value="souhlasim">
-          </label>
-        </div>
-      </div>
-      <div className="gallery">
-        <img src="obrazky/Martin auto.jpg">
-        <div className="desc">Snimek ze dne: </div>
-        <div className="radioBtn">
-          <label className="desc">
-            zaslat na email
-            <input name="vybrat" type="radio" value="souhlasim">
-          </label>
-        </div>
-      </div>
-      <div className="gallery">
-        <img src="obrazky/Martin auto.jpg">
-        <div className="desc">Snimek ze dne: </div>
-        <div className="radioBtn">
-          <label className="desc">
-            zaslat na email
-            <input  name="vybrat" type="radio" value="souhlasim">
-          </label>
-        </div>
-      </div>
-      <div className="gallery">
-        <img src="obrazky/Martin auto.jpg">
-        <div className="desc">Snimek ze dne: </div>
-        <div className="radioBtn">
-          <label className="desc">
-            zaslat na email
-            <input name="vybrat" type="radio" value="souhlasim">
-          </label>
-        </div>
-      </div>
-      <div className="gallery">
-        <img src="obrazky/Martin auto.jpg">
-        <div className="desc">Snimek ze dne: </div>
-        <div className="radioBtn">
-          <label className="desc">
-            zaslat na email
-            <input name="vybrat" type="radio" value="souhlasim">
-          </label>
-        </div>
-      </div>
-      <div className="gallery">
-        <img src="obrazky/Martin auto.jpg">
-        <div className="desc">Snimek ze dne: </div>
-        <div className="radioBtn">
-          <label className="desc">
-            zaslat na email
-            <input name="vybrat" type="radio" value="souhlasim">
-          </label>
-        </div>
-      </div>
-      <div className="gallery">
-        <img src="obrazky/Martin auto.jpg">
-        <div className="desc">Snimek ze dne: </div>
-        <div className="radioBtn">
-          <label className="desc">
-            zaslat na email
-            <input name="vybrat" type="radio" value="souhlasim">
-          </label>
-        </div>
-      </div>--> */}
           </div>
+
+          <form method="POST" className="formularRegistrace" action="https://">
+            <fieldset>
+              <ul className="formularovePole">
+                <li>
+                  <label for="date">Zobrazuj snímky OD</label>
+                  <input
+                    type="datetime-local"
+                    id="dateFrom"
+                    name="date"
+                    className="velke"
+                  />
+                </li>
+                <li>
+                  <label for="date">Zobrazuj snímky DO</label>
+                  <input
+                    type="datetime-local"
+                    id="dateTo"
+                    name="date"
+                    className="velke"
+                  />
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <input type="submit" className="vytvorit_ucet" value="Filtruj" />
+            </fieldset>
+          </form>
         </div>
       </div>
     </>
