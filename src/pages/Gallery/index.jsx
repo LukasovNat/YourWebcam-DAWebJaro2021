@@ -45,10 +45,19 @@ export const Gallery = () => {
             <fieldset>
               <ul className="formularovePole">
                 <li>
-                  <label for="date">Filtruj snimky podle data a času</label>
+                  <label for="date">Zobrazuj snímky OD</label>
                   <input
                     type="datetime-local"
-                    id="datum"
+                    id="dateFrom"
+                    name="date"
+                    className="velke"
+                  />
+                </li>
+                <li>
+                  <label for="date">Zobrazuj snímky DO</label>
+                  <input
+                    type="datetime-local"
+                    id="dateTo"
                     name="date"
                     className="velke"
                   />

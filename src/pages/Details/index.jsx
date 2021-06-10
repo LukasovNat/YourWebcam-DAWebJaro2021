@@ -8,22 +8,23 @@ export const Details = () => (
       <div className="popisSluzby">
         <div className="popisSluzby1">
           <h2>"Sledujte vše, co je pro Vás důležité"</h2>
-
+          <p>
+            <strong>
+              Nabízíme Vám jednoduché řešení dostupné pro kohokoliv, kdo vlastní{' '}
+              funkční IP webkameru, která je schopna v definovaném čase zasílat
+              nasnímané fotky snímky na určenou adresu.
+            </strong>{' '}
+          </p>
           <p>
             Chcete mít přehled, co se děje ve vašem domě, na parkovišti, na
             dvorku za domem, nebo jednoduše máte objekt zájmu, který chcete mít
             pod vizuální kontrolou? Nechcete utrácet peníze za finančně náročné
             zabezpečovací systémy?
             <br />
-            <strong>
-              Nabízíme Vám jednoduché řešení dostupné pro kohokoliv, kdo vlastní{' '}
-              funkční webkameru, která je schopna v definovaném čase zasílat
-              nasnímané fotky snímky na určenou adresu.
-            </strong>{' '}
-            <br />
-            A na Vás je už jen z pohodlí hotelového pokoje na druhém konci světa
-            sledovat, zda před vašimi dveřmi není nečekaná návštěva nebo je
-            vozidlo zaparkované, tak, jak jste jej před odjezdem zanechali.
+            Naše služba Vám umožní sledovat vše podstatné, třeba z pohodlí
+            hotelového pokoje na druhém konci světa..Vy tak uvidíte, zda před
+            vašimi dveřmi nebyla nečekaná návštěva nebo je vozidlo zaparkované,
+            tak, jak jste jej před odjezdem zanechali.
             <br />
           </p>
         </div>

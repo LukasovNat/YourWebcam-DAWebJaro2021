@@ -90,6 +90,7 @@ h1 {
 .menu--auth .byloA:hover {
   background-color: #413e3e;
   border-radius: 1.5em;
+  transition: background-color 1.2s;
 }
 /*.byloA:hover,
 .byloA:active {
@@ -226,6 +227,7 @@ h2 {
 .buttonHlavni:hover {
   background-color: darkgrey;
   border-radius: 1.5em;
+  transition: background-color 1.5s;
 }
 .tlacitko:hover {
   background-color: darkgrey;
