@@ -95,10 +95,9 @@ export const Registration = ({ handleLogin }) => {
             <ul className="formularovePole">
               <li>
                 <label for="udaje_o_kamere">Výrobce : </label>
-                <select id="znacka" name="kamera">
-                  <option value="S" className="velke">
-                    SONY
-                  </option>
+                <select id="znacka" name="kamera" className="select--size">
+                  <option value="mock"></option>
+                  <option value="S">SONY</option>
                   <option value="HV">HighVision</option>
                   <option value="A">Axis</option>
                   <option value="D">Dahua</option>

@@ -1,0 +1,35 @@
+.webcam--not_supported {
+  color: brown;
+}
+.webcam--supported {
+  color: #197278;
+}
+.select--size {
+  width: 100%;
+  font-size: 1rem;
+  min-height: 1.5rem;
+  font-family: sans-serif;
+}
+.kontejner--text {
+  text-align: center;
+  color: black;
+
+  font-size: 1.5rem;
+}
+.kontejner--pozadi {
+  background-image: url('../../assets/img_for_Cameras.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  max-width: 100%;
+  margin: auto;
+  height: 200px;
+  border-radius: 0.5rem;
+  margin-bottom: -16px;
+}
+@media (max-width: 575px) {
+  .kontejner--pozadi {
+    display: none;
+  }
+}

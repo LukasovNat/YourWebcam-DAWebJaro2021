@@ -15,24 +15,6 @@ body {
   background-attachment: fixed;
   background: hsla(20, 28%, 75%, 1);
 
-  /*background: linear-gradient(
-    360deg,
-    hsla(20, 28%, 75%, 1) 0%,
-    hsla(23, 65%, 87%, 1) 25%,
-    hsla(28, 37%, 90%, 1) 50%,
-    hsla(120, 60%, 99%, 1) 75%,
-    hsla(0, 0%, 100%, 1) 100%
-  );*/
-
-  /* background: -moz-linear-gradient(
-    360deg,
-    hsla(20, 28%, 75%, 1) 0%,
-    hsla(23, 65%, 87%, 1) 25%,
-    hsla(28, 37%, 90%, 1) 50%,
-    hsla(120, 60%, 99%, 1) 75%,
-    hsla(0, 0%, 100%, 1) 100%
-  );*/
-
   background: -webkit-linear-gradient(
     360deg,
     hsla(20, 28%, 75%, 1) 0%,
@@ -164,12 +146,12 @@ li img {
 .hamburgerMenu--span {
   font-size: 1.5rem;
   color: #413e3e;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .vlozenyDiv {
   width: 30rem;
   height: 15rem;
-  background-color: #d0b8ac;
+  background-color: #adc178; /*#d0b8ac;*/
   margin: auto;
   margin-top: -100px;
 }
@@ -210,10 +192,7 @@ p {
   font-weight: bolder;
   border-radius: 1.5rem;
 }
-h1,
-h2 {
-  text-align: center;
-}
+
 h2 {
   font-size: 4rem;
   line-height: 5rem;
@@ -236,7 +215,8 @@ h2 {
 /*stylovani stranky domu*/
 h3 {
   text-align: center;
-  font-size: 48px;
+  font-size: 3rem;
+  line-height: 3.2rem;
 }
 .domu {
   width: 665px;
@@ -488,12 +468,18 @@ td {
   }
 }
 @media (max-width: 575px) {
+  .hamburgerMenu--span {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 575px) {
   .kontejner {
     width: 100%;
   }
 }
 @media (max-width: 575px) {
-  .imgRegistrace {
+  .imgRegistrace,
+  .domu {
     display: none;
   }
 }
@@ -504,8 +490,36 @@ td {
   }
 }
 @media (max-width: 575px) {
+  h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+@media (max-width: 575px) {
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+  }
+}
+@media (max-width: 575px) {
+  .tlacitko {
+    margin: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .tlacitko .byloA {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 575px) {
   .miniatury {
     width: 85%;
+  }
+}
+@media (max-width: 575px) {
+  p {
+    padding: 0 13px 0 13px;
+    line-height: 1.2rem;
   }
 }
 @media (max-width: 575px) {
@@ -519,7 +533,6 @@ td {
     text-align: justify;
   }
 }
-
 @media (min-width: 1025px) {
   .hamburgerMenu {
     display: none;
