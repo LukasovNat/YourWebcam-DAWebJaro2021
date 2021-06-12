@@ -84,11 +84,13 @@ export const Cameras = () => {
       {brand !== '' && type !== '' ? (
         isSupported() ? (
           <div className="webcam--supported">
-            <h3>Tuto webkameru můžete použít.</h3>
+            <h3>Gratulujeme, IP webkamera je podporována.</h3>
           </div>
         ) : (
           <div className="webcam--not_supported">
-            <h3>Tato webkamera není výrobcem pro naše služby podporována.</h3>
+            <h3>
+              Bohužel, IP webkamera není výrobcem pro naše služby podporována.
+            </h3>
           </div>
         )
       ) : (

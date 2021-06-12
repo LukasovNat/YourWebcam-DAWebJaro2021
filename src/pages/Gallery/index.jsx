@@ -33,7 +33,7 @@ export const Gallery = () => {
   return (
     <>
       <div className="kontejner">
-        <h2>Vítejte "XY" ve svém uživatelském účtu!</h2>
+        <h2>Vítejte ve svém uživatelském účtu</h2>
         <p className="ucetUvod">
           Dobrý den,
           <br />v této sekci najdete přehled Vašich snímků, které si zpětně

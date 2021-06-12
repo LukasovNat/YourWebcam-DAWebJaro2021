@@ -13,7 +13,7 @@ export const Settings = () => {
           Moje zákaznické číslo: 1234567
         </p>
         <hr />
-        <h4>Aktuální stav mého účtu:</h4>
+        <h3>Aktuální stav mého účtu</h3>
         <p>
           Typ poskytované služby: PREMIUM
           <br />
@@ -22,9 +22,9 @@ export const Settings = () => {
           Zrušení účtu{' '}
         </p>
         <hr />
-        <h4>Moje aktivity</h4>
+        <h3>Moje aktivity</h3>
         <p>
-          Moje emailová adresa: petrpavel@gmail.com
+          Moje emailová adresa: helloWorld@gmail.com
           <br />
           Heslo: **********
         </p>

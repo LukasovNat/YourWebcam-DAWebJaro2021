@@ -7,7 +7,7 @@ export const Details = () => (
     <main role="main" className="kontejner">
       <div className="popisSluzby">
         <div className="popisSluzby1">
-          <h2>"Sledujte vše, co je pro Vás důležité"</h2>
+          <h2>Sledujte vše, co je pro Vás důležité</h2>
           <p>
             <strong>
               Nabízíme Vám jednoduché řešení dostupné pro kohokoliv, kdo vlastní{' '}

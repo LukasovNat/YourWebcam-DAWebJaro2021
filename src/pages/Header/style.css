@@ -1,9 +1,9 @@
 .hlavicka {
-  background-color: #d0b8ac;
-  color: #ffffff;
+  background-color: /*#d0b8ac*/ #e2cfc4;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .logo {
   font-weight: bold;
