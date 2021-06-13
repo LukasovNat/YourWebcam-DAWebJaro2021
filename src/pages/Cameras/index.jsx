@@ -33,7 +33,7 @@ export const Cameras = () => {
           <fieldset>
             <ul className="formularovePole">
               <li>
-                <label for="znacka">Značka : </label>
+                <label htmlFor="znacka">Značka : </label>
 
                 <select
                   className="select--size"
@@ -58,7 +58,7 @@ export const Cameras = () => {
             <fieldset>
               <ul className="formularovePole">
                 <li>
-                  <label for="typ">Typ : </label>
+                  <label htmlFor="typ">Typ : </label>
                   <select
                     className="select--size"
                     value={type}

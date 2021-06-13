@@ -48,3 +48,23 @@ ul {
   font-family: Oswald;
   color: #413e3e;
 } */
+
+.hamburgerMenu--closed .menu__items {
+  display: none;
+}
+.hamburgerMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 1rem;
+}
+.menu__items {
+  position: relative;
+  background-color: #e2cfc4;
+  padding: 1rem;
+}
+.menu__item {
+  display: block;
+}

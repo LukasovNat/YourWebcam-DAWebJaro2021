@@ -19,7 +19,7 @@ const App = () => {
   return (
     <>
       <Router>
-        <Header isLogged={isLogged} />
+        <Header isLogged={isLogged} handleLogin={setIsLogged} />
         <Switch>
           <Route exact path="/">
             <Main />
@@ -40,7 +40,7 @@ const App = () => {
             <Gallery />
           </Route>
           <Route path="/login">
-            <Login />
+            <Login handleLogin={setIsLogged} />
           </Route>
           <Route path="/settings">
             <Settings />

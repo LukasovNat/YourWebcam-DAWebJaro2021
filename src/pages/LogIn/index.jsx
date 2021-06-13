@@ -1,8 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './style.css';
 
-export const Login = () => {
+export const Login = ({ handleLogin }) => {
+  let history = useHistory();
+  const login = (event) => {
+    event.preventDefault();
+    handleLogin(true);
+    history.push('/gallery');
+  };
+
   return (
     <>
       <div className="prihlaseniUzivatelskyUcet">
@@ -16,22 +23,30 @@ export const Login = () => {
       </div>
       <div className="kontejner">
         <div className="prihlaseniUzivatelskyUcet--div">
-          <form method="POST" className="formularRegistrace" action="https://">
+          <form
+            onSubmit={login}
+            method="POST"
+            className="formularRegistrace"
+            action="https://"
+          >
             <fieldset>
               <ul className="formularovePole">
                 <li>
-                  <label for="email">E-mail: </label>
+                  <label htmlFor="email">E-mail: </label>
                   <input
                     type="email"
+                    required="required"
                     id="email"
                     name="email"
                     className="velke"
                   />
                 </li>
                 <li>
-                  <label for="heslo">Heslo: </label>
+                  <label htmlFor="heslo">Heslo: </label>
                   <input
                     type="password"
+                    required="required"
+                    minLength={8}
                     id="heslo"
                     name="heslo"
                     className="velke"

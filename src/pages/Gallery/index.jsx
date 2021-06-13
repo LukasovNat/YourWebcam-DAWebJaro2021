@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 const testPicDb = [
   { id: '1', url: '../../assets/MartinAuto.jpg', label: 'Prvni' },
-  { id: '2', url: '../../assets/pesZmenseno.jpg', label: 'Druhy' },
+  { id: '2', url: '../../assets/img_for_Cameras.jpg', label: 'Druhy' },
   { id: '3', url: '../../assets/MartinAuto.jpg', label: 'Treti' },
-  { id: '4', url: '../../assets/pesZmenseno.jpg', label: 'Ctvrty' },
+  { id: '4', url: '../../assets/img_for_Cameras.jpg', label: 'Ctvrty' },
   { id: '5', url: '../../assets/MartinAuto.jpg', label: 'Paty' },
 ];
 
@@ -86,7 +86,7 @@ export const Gallery = () => {
             <fieldset>
               <ul className="formularovePole">
                 <li>
-                  <label for="date">Zobrazuj snímky OD</label>
+                  <label htmlFor="date">Zobrazuj snímky OD</label>
                   <input
                     type="datetime-local"
                     id="dateFrom"
@@ -95,7 +95,7 @@ export const Gallery = () => {
                   />
                 </li>
                 <li>
-                  <label for="date">Zobrazuj snímky DO</label>
+                  <label htmlFor="date">Zobrazuj snímky DO</label>
                   <input
                     type="datetime-local"
                     id="dateTo"
