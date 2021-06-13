@@ -523,7 +523,7 @@ td {
     padding: 0 13px 0 13px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1026px) {
   .hamburgerMenu {
     display: none;
   }
