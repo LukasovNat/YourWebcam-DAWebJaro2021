@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router';
 import { cameraTypes } from '../../cameraTypes';
 import './style.css';
 
 export const Cameras = () => {
   const [brand, setBrand] = useState('');
   const [type, setType] = useState('');
+  let history = useHistory();
 
   const getBrands = () =>
     cameraTypes
@@ -13,6 +15,11 @@ export const Cameras = () => {
 
   const isSupported = () => {
     return cameraTypes.find((camera) => camera.type === type).isSupported;
+  };
+
+  const registration = (event) => {
+    event.preventDefault();
+    history.push('/registration');
   };
 
   return (
@@ -86,6 +93,7 @@ export const Cameras = () => {
           <div className="webcam--supported">
             <h3>Gratulujeme, IP kamera je podporována.</h3>
             <form
+              onSubmit={registration}
               method="POST"
               className="formularRegistrace"
               action="https://"
