@@ -10,7 +10,8 @@ export const Main = () => {
           <p className="uvodSlogan">
             <span className="uvodSlogan--span">
               {' '}
-              Sledujte snímky z Vaší IPwebové kamery ať už jste
+              Sledujte snímky z Vaší IP kamery ať už jste
+              <br />
             </span>{' '}
             kdekoliv.
           </p>

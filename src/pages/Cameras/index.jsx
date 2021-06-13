@@ -84,7 +84,7 @@ export const Cameras = () => {
       {brand !== '' && type !== '' ? (
         isSupported() ? (
           <div className="webcam--supported">
-            <h3>Gratulujeme, IP webkamera je podporována.</h3>
+            <h3>Gratulujeme, IP kamera je podporována.</h3>
             <form
               method="POST"
               className="formularRegistrace"
@@ -102,7 +102,7 @@ export const Cameras = () => {
         ) : (
           <div className="webcam--not_supported">
             <h3>
-              Bohužel, IP webkamera není výrobcem pro naše služby podporována.
+              Bohužel, IP kamera není výrobcem pro naše služby podporována.
             </h3>
           </div>
         )

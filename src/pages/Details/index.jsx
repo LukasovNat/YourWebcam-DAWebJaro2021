@@ -11,7 +11,7 @@ export const Details = () => (
           <p>
             <strong>
               Nabízíme Vám jednoduché řešení dostupné pro kohokoliv, kdo vlastní{' '}
-              funkční IP webkameru, která je schopna v definovaném čase zasílat
+              funkční IP kameru, která je schopna v definovaném čase zasílat
               nasnímané fotky snímky na určenou adresu.
             </strong>{' '}
           </p>

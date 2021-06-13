@@ -385,11 +385,12 @@ td {
     height: 480px;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 779px) {
   .vlozenyDiv {
     display: none;
   }
 }
+
 @media (max-width: 575px) {
   .uvodText {
     font-size: 1rem;
